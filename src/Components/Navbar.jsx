@@ -20,13 +20,13 @@ const Navbar = () => {
   return (
     <header className="w-full bg-black text-white fixed top-0 left-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
           <Link to="/" className="text-xl font-bold flex items-center">
             <motion.img
               src="http://themes.webdevia.com/locksmith-home-security-systems-wordpress-theme/wp-content/uploads/2017/07/logo3.png"
               alt="Logo"
-              className="h-10 w-auto"
+              className="h-6 sm:p-2 sm:h-10 md:h-12 w-auto max-w-[100px] sm:max-w-[150px] md:max-w-[180px]"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}

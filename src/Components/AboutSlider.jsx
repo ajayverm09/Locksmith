@@ -38,7 +38,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center text-white px-4 py-16">
+    <section className="relative w-full min-h-[60vh] sm:min-h-screen flex items-center justify-center text-white px-4 py-12 sm:py-16">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -60,7 +60,7 @@ const TestimonialSlider = () => {
       >
         {/* Heading */}
         <motion.h2
-          className="text-3xl sm:text-4xl font-bold mb-2"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -76,7 +76,7 @@ const TestimonialSlider = () => {
           transition={{ duration: 0.6 }}
         />
         <motion.p
-          className="mb-10 text-gray-300"
+          className="mb-8 sm:mb-10 text-gray-300 text-sm sm:text-base"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -96,9 +96,9 @@ const TestimonialSlider = () => {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="bg-white/10 backdrop-blur-md p-6 sm:p-10 rounded-xl shadow-lg relative">
+              <div className="bg-white/10 backdrop-blur-md p-4 sm:p-10 rounded-xl shadow-lg relative">
                 {/* Quote */}
-                <p className="italic text-lg sm:text-xl leading-relaxed text-white mb-6 text-left">
+                <p className="italic text-base sm:text-lg leading-relaxed text-white mb-6 text-left">
                   “{t.quote}”
                 </p>
 
@@ -107,7 +107,7 @@ const TestimonialSlider = () => {
                   <div className="text-right">
                     <p className="text-yellow-400 font-semibold">{t.name}</p>
                   </div>
-                  <div className="w-12 h-12 rounded-full overflow-hidden ml-4 border-2 border-yellow-500">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden ml-3 sm:ml-4 border-2 border-yellow-500">
                     <img
                       src={t.image}
                       alt={t.name}
